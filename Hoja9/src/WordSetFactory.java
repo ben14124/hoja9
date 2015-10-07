@@ -14,7 +14,7 @@ Algoritmos y Estructuras de Datos - 2011
 Hoja de trabajo 7 
 Autor: Eduardo Castellanos
 
-Descripción: WordSetFactory. Clase  utilizada para instanciar los diferentes tipos de sets. 
+Descripcion: WordSetFactory. Clase  utilizada para instanciar los diferentes tipos de sets. 
 */
 class WordSetFactory {
 	

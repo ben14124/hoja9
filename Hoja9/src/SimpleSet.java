@@ -14,7 +14,7 @@ Algoritmos y Estructuras de Datos - 2011
 Hoja de trabajo 7
 Autor: Eduardo Castellanos
 
-Descripción: SimpleSet ejemplo con ArrayList.
+Descripcion: SimpleSet ejemplo con ArrayList.
 */
 import java.util.ArrayList;
 
