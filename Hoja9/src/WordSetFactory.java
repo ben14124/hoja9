@@ -28,7 +28,8 @@ class WordSetFactory {
 	public static WordSet generateSet(int tipo)
 	{
 	    if (tipo == 1)
-		    return new TreeMap1();
+                return new HashTable1();
+		    //return new TreeMap1();
 		else
 		    // aqui se regresara el set empleando sus implementaciones:
 			// if tipo == 2 cree una instancia para un Wordset implementao con Red Black Tree
