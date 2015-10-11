@@ -1,7 +1,7 @@
 //import structure5.*;
 import java.util.Map;
 import java.util.Scanner;
-
+/*
 public class SymMap
 {
     public static void main(String args[])
@@ -33,7 +33,7 @@ public class SymMap
         } while (s.hasNext());
     }
 }
-
+*/
 /*
 three 3
 one unity

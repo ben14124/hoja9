@@ -29,6 +29,7 @@ class SimpleSet implements WordSet
 	
 	public Word get(Word word)
 	{
+                //System.out.println(word.getWord() + "------" +word.getType());
 		int index = base.indexOf(word);
 		if(index == -1) return null;
 		return base.get(index);
