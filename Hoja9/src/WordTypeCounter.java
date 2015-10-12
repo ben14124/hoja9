@@ -19,16 +19,21 @@ Descripcion: Programa principal.
 import java.io.*;
 
 class WordTypeCounter {
+    String[] args = {"hola"};
 	public static void main(String[] args) throws Exception
 	{
-		if(args.length > 1)
+            String[] args1 = new String[3];
+            args1[0] = ("words.txt");
+            args1[1] = ("text.txt");
+            args1[2] = ("1");
+		if(args1.length > 1)
 		{
 			// Declaracion e inicializacion de variables.
 			// el primer parametro indica el nombre del archivo con las definiciones de las palabras
-			File wordFile = new File(args[0]);
+			File wordFile = new File(args1[0]);
 			
 			// el segundo parametro indica el nombre del archivo que tiene el texto a analizar
-			File textFile = new File(args[1]);
+			File textFile = new File(args1[1]);
 			
 			// el tercer parametro sirve para seleccionar la implementacion que se usara para
 			// guardar el conjunto de palabras. Use el valor 1 para indicar que se empleara
@@ -38,7 +43,7 @@ class WordTypeCounter {
 			//  3 Splay Tree
 			//  4 Hash Table
 			//  5 TreeMap (de java collection framework)
-			int implementacion = Integer.parseInt(args[2]);
+			int implementacion = Integer.parseInt(args1[2]);
 			
 			BufferedReader wordreader;
 			BufferedReader textreader;
