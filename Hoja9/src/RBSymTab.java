@@ -1,7 +1,7 @@
 // A simple symbol table for a postscript interpreter.
 // (c) 2001,1996, 2001 duane a. bailey
-/*
-import structure5.*;
+
+/*import structure5.*;
 import java.util.Iterator;
 public class RBSymTab<S extends Comparable<S>,T>
 {

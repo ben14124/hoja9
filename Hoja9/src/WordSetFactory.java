@@ -28,7 +28,7 @@ class WordSetFactory {
 	public static WordSet generateSet(int tipo)
 	{
 	    if (tipo == 1)
-                return new HashTable1();
+                return new HashTable();
 		//return new TreeMap1();
                 //return new SimpleSet();
 		else

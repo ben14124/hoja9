@@ -13,11 +13,11 @@ import java.util.TreeMap;
  *
  * @author Daniela
  */
-public class HashTable1 implements WordSet{
+public class HashTable implements WordSet{
 
     Map<String,Word> hashmap;
     
-        public HashTable1(){
+        public HashTable(){
             hashmap = new HashMap<String,Word>();
         }
     
