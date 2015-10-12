@@ -10,21 +10,22 @@
  */
 public class SplaySet extends SplayBST implements WordSet{
     
-    private SplayBST splayTree;
+    private SplayBST<String,Word> splayTree;
     
     public SplaySet(){
-        splayTree= new SplayBST();
+        splayTree= new SplayBST<String,Word>();
     }
 
     @Override
     public void add(Word wordObject) {
-        splayTree.put(wordObject.getWord(), wordObject.getType());
+        String word = wordObject.getWord();       
+        splayTree.put(word, wordObject);
     }
 
     @Override
     public Word get(Word word) {
-        Word myWord = new Word(word.getWord(), splayTree.get(word.getWord()).toString());
-        return myWord;
+        Word retornando = splayTree.get(word.getWord());
+        return retornando; //retorna el objeto si se tiene o null
     }
     
 }

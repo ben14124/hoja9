@@ -30,7 +30,7 @@ public class HashTable implements WordSet{
         
     @Override
 	public Word get(Word word){
-            Word retornando = hashmap.remove(word.getWord());
+            Word retornando = hashmap.get(word.getWord());
             return retornando; //retorna el objeto si se tiene o null
         }
     

@@ -29,7 +29,7 @@ public class TreeMap1 implements WordSet {
         
     @Override
 	public Word get(Word word){
-            Word retornando = treemap.remove(word.getWord());
+            Word retornando = treemap.get(word.getWord());
             return retornando; //retorna el objeto si se tiene o null
         }
     

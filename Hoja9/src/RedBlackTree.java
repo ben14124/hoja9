@@ -61,6 +61,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 			x.numRight = 0;
 			x.right.numLeft = 1;
 		}
+             
 
 		// Case 2: x.right.left also exists in addition to Case 1
 		else if (isNil(x.left) && !isNil(x.right.left)){

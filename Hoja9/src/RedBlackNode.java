@@ -29,9 +29,13 @@ class RedBlackNode<T extends Comparable<T>> {
         right = null;
     }
 
-	// Constructor which sets key to the argument.
-	RedBlackNode(T key){
+    // Constructor which sets key to the argument.
+    RedBlackNode(T key){
         this();
         this.key = key;
-	}
+    }
+
+    public T getKey() {
+        return key;
+    }
 }// end class RedBlackNode

@@ -10,10 +10,10 @@
  */
 public class RedBlackSet implements WordSet {
     
-    private RedBlackTree RBTree;
+    private RedBlackTree<Word> RBTree;
     
     public RedBlackSet(){
-        RBTree= new RedBlackTree();
+        RBTree= new RedBlackTree<Word>();
     }
 
     @Override
@@ -23,12 +23,11 @@ public class RedBlackSet implements WordSet {
 
     @Override
     public Word get(Word word) {
-        String theWord;
-        theWord = RBTree.search(word).toString();
-        if (theWord == null) return null;
-        String wordParts[];
-        wordParts= theWord.split("\\.");
-        Word myWord = new Word(wordParts[0].trim(), wordParts[1].trim());
-        return myWord;
+        RedBlackNode<Word> theWord = RBTree.search(word);
+        if (theWord == null){
+            return null;
+        }
+        Word regresando = theWord.getKey();
+        return regresando;
     }
 }
