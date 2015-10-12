@@ -15,27 +15,23 @@ import java.util.TreeMap;
  */
 public class HashTable1 implements WordSet{
 
-    Map<String,String> hashmap;
+    Map<String,Word> hashmap;
     
         public HashTable1(){
-            hashmap = new HashMap<String,String>();
+            hashmap = new HashMap<String,Word>();
         }
     
     @Override
 	public void add(Word wordObject){
             String word = wordObject.getWord();
-            String type = wordObject.getType();
-            //System.out.println(word);
-            System.out.println(hashmap.put(word, type));
-            //treemap.put(word, type);
+            hashmap.put(word, wordObject);
             //System.out.println(wordObject.getWord() + "------" +wordObject.getType());
         }
         
     @Override
 	public Word get(Word word){
-            hashmap.remove(word.getWord());
-            //System.out.println(treemap.remove(word.getWord()));
-            return word;
+            Word retornando = hashmap.remove(word.getWord());
+            return retornando; //retorna el objeto si se tiene o null
         }
     
 }

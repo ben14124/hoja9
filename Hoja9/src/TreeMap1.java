@@ -14,27 +14,23 @@ import java.util.TreeMap;
  * @author dbs_jd
  */
 public class TreeMap1 implements WordSet {
-    Map<String,String> treemap;
+    Map<String,Word> treemap;
     
         public TreeMap1(){
-            treemap = new TreeMap<String,String>();
+            treemap = new TreeMap<String,Word>();
         }
     
     @Override
 	public void add(Word wordObject){
             String word = wordObject.getWord();
-            String type = wordObject.getType();
-            //System.out.println(word);
-            System.out.println(treemap.put(word, type));
-            //treemap.put(word, type);
+            treemap.put(word, wordObject);
             //System.out.println(wordObject.getWord() + "------" +wordObject.getType());
         }
         
     @Override
 	public Word get(Word word){
-            treemap.remove(word.getWord());
-            //System.out.println(treemap.remove(word.getWord()));
-            return word;
+            Word retornando = treemap.remove(word.getWord());
+            return retornando; //retorna el objeto si se tiene o null
         }
     
 }
