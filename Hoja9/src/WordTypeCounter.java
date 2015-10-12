@@ -19,7 +19,6 @@ Descripcion: Programa principal.
 import java.io.*;
 
 class WordTypeCounter {
-    String[] args = {"hola"};
 	public static void main(String[] args) throws Exception
 	{
 		if(args.length > 1)
