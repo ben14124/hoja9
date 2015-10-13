@@ -1,3 +1,8 @@
+/*
+ *RedBlackNode.java
+ *Obtenido de: https://github.com/Arsenalist/Red-Black-Tree-Java-Implementation/blob/master/src/RedBlackNode.java
+ */
+
 class RedBlackNode<T extends Comparable<T>> {
 
     /** Possible color for this node */
