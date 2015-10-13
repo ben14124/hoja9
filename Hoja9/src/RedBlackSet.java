@@ -1,13 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Hoja de Trabajo 9
+ * Ma. Belen Hernandez - 14361
+ * Daniela Pocasangre - 14162
+ * Juan Diego Benitez - 14124
  */
 
-/**
- *
- * @author Ma. Belen
- */
 public class RedBlackSet implements WordSet {
     
     private RedBlackTree<Word> RBTree;
@@ -18,16 +15,16 @@ public class RedBlackSet implements WordSet {
 
     @Override
     public void add(Word wordObject) {
-        RBTree.insert(wordObject);
+        RBTree.insert(wordObject); //agrega objeto al arbol
     }
 
     @Override
     public Word get(Word word) {
         RedBlackNode<Word> theWord = RBTree.search(word);
         if (theWord == null){
-            return null;
+            return null; //retorna null si no esta en el arbol
         }
-        Word regresando = theWord.getKey();
+        Word regresando = theWord.getKey(); //retorna el objeto Word si se tiene en el arbol
         return regresando;
     }
 }

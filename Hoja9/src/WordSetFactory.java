@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author dbs_jd
- */
 /*
 UVG
 Algoritmos y Estructuras de Datos - 2011
@@ -39,7 +30,7 @@ class WordSetFactory {
                 if (tipo == 5)
                     return new TreeMap1();
 			
-                return null; // modificarlo para que regrese la implementacion seleccionada
+                return null;
             }
 	}
 	

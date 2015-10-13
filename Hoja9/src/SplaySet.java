@@ -1,13 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Hoja de Trabajo 9
+ * Ma. Belen Hernandez - 14361
+ * Daniela Pocasangre - 14162
+ * Juan Diego Benitez - 14124
  */
 
-/**
- *
- * @author Ma. Belen
- */
 public class SplaySet extends SplayBST implements WordSet{
     
     private SplayBST<String,Word> splayTree;
@@ -19,7 +16,7 @@ public class SplaySet extends SplayBST implements WordSet{
     @Override
     public void add(Word wordObject) {
         String word = wordObject.getWord();       
-        splayTree.put(word, wordObject);
+        splayTree.put(word, wordObject); //key - palabra / value - objeto
     }
 
     @Override

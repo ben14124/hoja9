@@ -4,15 +4,12 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Hoja de Trabajo 9
+ * Ma. Belen Hernandez - 14361
+ * Daniela Pocasangre - 14162
+ * Juan Diego Benitez - 14124
  */
 
-/**
- *
- * @author Daniela
- */
 public class HashTable implements WordSet{
 
     Map<String,Word> hashmap;
@@ -24,8 +21,7 @@ public class HashTable implements WordSet{
     @Override
 	public void add(Word wordObject){
             String word = wordObject.getWord();
-            hashmap.put(word, wordObject);
-            //System.out.println(wordObject.getWord() + "------" +wordObject.getType());
+            hashmap.put(word, wordObject); //key - palabra / value - objeto
         }
         
     @Override
