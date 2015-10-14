@@ -1,6 +1,9 @@
 /*
  *RedBlackTree.java
  *Obtenido de: https://github.com/Arsenalist/Red-Black-Tree-Java-Implementation/blob/master/src/RedBlackTree.java
+
+ *Por Zarar Sidiqi
+ *Username (Github): Arsenalist
  */
 
 import java.util.ArrayList;
